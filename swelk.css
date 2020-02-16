@@ -1,21 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+*{
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+}
+
 body {
-    background-color: #AEEEEE;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(62, 167, 248);
     font-size: 25px;
 }
 
 
 .header {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    background-image: url("res/messaging4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     text-align: center;
     font-size: 33px;
 }
 
-.column {
+h1{
+    margin-top: 50px;
+}
+
+.logo img{
+    margin-top: 60px;
+}
+
+#menuBar{
+    list-style-type: none;
+    margin-top: 30px;
+}
+#menuBar li{
+    display: inline-block;
+}
+#menuBar li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid; #fff
+}
+#menuBar li a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.about{
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    width: 50%;
+    background-color: #fff;
+    background-image: url("res/textBubble1.png");
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.appPicture{
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.column {
+    background-color: #fff;
+    float: left;
+    width: 46.4%;
+    height: 500px;
+    padding: 30px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .footer {
@@ -25,5 +82,11 @@ body {
 .maps {
     float: left;
     padding: 30px;
-    position: relative;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
