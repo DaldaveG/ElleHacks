@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:rgb(62, 167, 248);
+    background-color: #fff;
     font-size: 25px;
 }
 
@@ -14,8 +14,8 @@ body {
     background-color: #ffffff;
     background-image: url("res/messaging4.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px;
+    background-size: 100% 100%;
+    padding: 10px;
     text-align: center;
     font-size: 33px;
 }
@@ -23,14 +23,25 @@ body {
 h1{
     margin-top: 50px;
 }
+th{
+    font-weight: normal;
+    text-align: left;
+}
 
 .logo img{
     margin-top: 60px;
 }
+img{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
 
 #menuBar{
+    padding: 5px;
+    background-color:rgb(62, 167, 248);
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 #menuBar li{
     display: inline-block;
@@ -38,8 +49,7 @@ h1{
 #menuBar li a{
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
-    border: 1px solid; #fff
+    padding: 10px 20px;
 }
 #menuBar li a:hover{
     background-color: #fff;
@@ -65,9 +75,11 @@ h1{
 .column {
     background-color: #fff;
     float: left;
-    width: 46.4%;
-    height: 500px;
-    padding: 30px;
+    flex: 50%;
+    padding: 20px;
+}
+.row{
+    display: flex;
 }
 .row:after{
     content: "";
@@ -75,8 +87,8 @@ h1{
     clear: both;
 }
 
-.footer {
-
+.download{
+    padding: 20px;
 }
 
 .maps {
